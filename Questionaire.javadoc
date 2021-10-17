@@ -1,0 +1,37 @@
+java}
+    
+    com.report}
+          controller}  ReportController
+          
+          entity}  Geographylist
+                         } Developinglist
+                         }Prelist
+                         
+          repository} ReportViewRepository
+          
+          service}ReportService
+                    impl} ReportServiceImpl
+                          
+                          
+          view} ReportView
+          
+          VO} ReportApplication
+               ResultVO
+                    }reportVO} ReportDataVO
+                               ReportInfoVO
+                               ReportViewListVO
+                               
+                               
+        resources}
+                  appliction.properties
+                  application.yml
+                    
+                   
+       test}
+              java}
+                     com.report} 
+                                ReportApplicationTests
+                                
+                    Lib..
+                       
+                        
