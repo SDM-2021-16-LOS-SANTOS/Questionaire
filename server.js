@@ -1,7 +1,5 @@
 const http = require("http");
 const fs = require("fs");
-const port = 3000;
-const ip = "127.0.0.1";
 
 const sendResponse = (filename, statusCode, response) => {
     fs.readFile(`./${filename}`, (error, data) => {
@@ -20,17 +18,21 @@ const sendResponse = (filename, statusCode, response) => {
 const server =  http.createServer((request, response) => {
     // console.log(request.url, request.method);
     const method = request.method;
-    let url = request.url;
-
+    const url = request.url;
 
     if(method === "GET") {
-        sendResponse("Questionaire.html",200,response);
+        if (url === "/") {
+            sendResponse("Questionaire.html",200,response);
+        }
+        else{
+            sendResponse("404.html",404,response);
+        }
+    }else{
     }
-    else{
-        sendResponse("404.html",404,response);
-
-    }     
 });
+
+const port = 3000;
+const ip = "127.0.0.1";
 
 
 server.listen(port,ip,() => {
