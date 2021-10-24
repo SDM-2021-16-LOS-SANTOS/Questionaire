@@ -28,6 +28,26 @@ const server =  http.createServer((request, response) => {
             sendResponse("404.html",404,response);
         }
     }else{
+        if(url === "/finish"){
+            request.on("data",(chunk)=>{
+                body.push(chunk);
+            });
+
+//buffer
+            request.on("end",()=>{
+                body = Buffer.concat(body).toString();
+                body = qs.parse(body);
+                console.log(body);
+
+                response.statusCode = 301;
+                response.setHeader("Location","/finish.html");
+            
+                response.end();
+            })
+        }
+        else{
+
+        }
     }
 });
 
