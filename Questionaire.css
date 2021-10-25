@@ -60,3 +60,13 @@ header{
     width: 120px;
     transition: 0.5s;
 }
+
+/*adding media queries for responsive design*/
+
+/* On screens that are 700px or less, set the width of .ques to 60% */
+@media screen and (max-width: 700px) {
+    
+    .ques{
+        width: 60%;
+    }
+  }
