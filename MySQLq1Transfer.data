@@ -1,0 +1,51 @@
+Source Server         : student
+ Source Server Type    : MySQL
+ Source Server Version : 80026
+ Source Host           : localhost:****
+ Source Schema         : softwared
+
+ Target Server Type    : MySQL
+ Target Server Version : 80026
+ File Encoding         : 65001
+
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for q1
+-- ----------------------------
+DROP TABLE IF EXISTS `q1`;
+CREATE TABLE `q1`  (
+  `NO.` int NOT NULL,
+  `question` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `ans` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`NO.`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of q1
+-- ----------------------------
+INSERT INTO `q1` VALUES (1, 'The most populous country in the world', 'China');
+INSERT INTO `q1` VALUES (2, 'The largest country in the world', 'Russia');
+INSERT INTO `q1` VALUES (3, 'The smallest country in the world', 'the Vatican');
+INSERT INTO `q1` VALUES (4, 'The highest peak in the world', 'Mount Everest');
+INSERT INTO `q1` VALUES (5, 'The longest mountain range in the world', 'the Andes\r\n');
+INSERT INTO `q1` VALUES (6, 'The largest basin in the world', 'the Congo Basin');
+INSERT INTO `q1` VALUES (7, 'The longest river in the world', 'the Nile');
+INSERT INTO `q1` VALUES (8, 'The largest continent in the world', 'Asia');
+INSERT INTO `q1` VALUES (9, 'The smallest continent in the world', 'Oceania');
+INSERT INTO `q1` VALUES (10, 'The largest plain in the world', 'the Amazon Plain');
+INSERT INTO `q1` VALUES (11, 'The largest island in the world', 'Greenland');
+INSERT INTO `q1` VALUES (12, 'The the largest desert in the world', 'the Sahara');
+INSERT INTO `q1` VALUES (13, 'The earliest industrial development country in the world', 'Britain Argentina');
+INSERT INTO `q1` VALUES (14, 'The largest beef exporter in the world', 'Argentina');
+INSERT INTO `q1` VALUES (15, 'The largest country in agricultural production in the world', 'the United States\r\n\r\n');
+INSERT INTO `q1` VALUES (16, 'The country producing the most gold in the world', 'South Africa');
+INSERT INTO `q1` VALUES (17, 'The sea area with the most frequent typhoons in the world', 'the Pacific Northwest');
+INSERT INTO `q1` VALUES (18, 'The largest arable land country in the world', 'the United States');
+INSERT INTO `q1` VALUES (19, 'The only country with three capitals in the world', 'South Africa');
+INSERT INTO `q1` VALUES (20, 'The country with the highest birth rate in the world', 'Niger');
+
+SET FOREIGN_KEY_CHECKS = 1;
