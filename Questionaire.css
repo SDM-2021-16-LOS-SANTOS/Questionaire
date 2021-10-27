@@ -9,9 +9,9 @@ html{
 }
 
 header{
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px;
-    padding-bottom: 30px;
+    text-align: center;
 }
 
 .ques{
@@ -20,7 +20,7 @@ header{
     width: 600px;
     padding: 50px;
     box-shadow: 5px 5px 5px black;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 
@@ -43,7 +43,7 @@ header{
 }
 
 .ques input[type="text"]:focus{
-    border-color: lightgoldenrodyellow;
+    border-color: lightgreen;
     width: 250px;
     transition: 0.5s;
 }
@@ -59,4 +59,25 @@ header{
     background-color: lightgreen;
     width: 120px;
     transition: 0.5s;
+}
+
+.h{
+    margin: auto;
+    text-align: left;
+    padding-bottom: 35px;
+    padding-top: 50px;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 2cm;
+}
+
+.h1{
+    margin: auto;
+    text-align: left;
+    padding-bottom: 35px;
+    padding-top: 50px;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 2cm;
+
 }
