@@ -1,0 +1,25 @@
+html{
+    display: contents;
+    text-align: center;
+    margin: auto;
+    padding: 1cm;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+body{
+    margin: auto;
+    width: 500px;
+}
+
+div{
+    font-size: x-large;
+    margin: auto;
+    text-align: left;
+    padding-top: 1cm;
+}
+footer{
+    margin: 2cm;
+}
