@@ -1,0 +1,14 @@
+package com.firstclass.report.VO.reportVO;
+
+import lombok.Data;
+
+@Data
+public class ReportInfoVO {
+
+    private String organization;
+
+    private String branch;
+
+    private String reason;
+
+}
