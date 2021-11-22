@@ -11,12 +11,6 @@ table.sudoku {
   border: medium solid black;
 }
 
-table.sudoku {
-  border-collapse: collapse;
-  margin: auto;
-  border: medium solid black;
-}
-
 
 table.sudoku td {
   border: thin solid lightgray;
