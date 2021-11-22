@@ -1,4 +1,10 @@
-
+body {
+  height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 table.sudoku {
   border-collapse: collapse;
