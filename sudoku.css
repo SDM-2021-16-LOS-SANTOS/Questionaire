@@ -5,6 +5,12 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+table.sudoku {
+  border-collapse: collapse;
+  margin: auto;
+  border: medium solid black;
+}
+
 
 
 table.sudoku td {
